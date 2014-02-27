@@ -2,4 +2,4 @@ language: ruby
 rvm:
   - 2.0.0
   - 2.1.0
-gemfile: .gemfile/TravisCI_Gemfile
+gemfile: Gemfile
