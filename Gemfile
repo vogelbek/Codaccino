@@ -26,9 +26,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-group :test do
-  gem 'rake'
-end
+gem 'rake'
 
 group :production do
   gem 'pg'
