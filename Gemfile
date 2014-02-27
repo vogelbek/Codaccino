@@ -26,6 +26,9 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+gem 'bundler'
+gem 'rake'
+
 group :production do
   gem 'pg'
 end
