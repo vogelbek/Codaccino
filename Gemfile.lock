@@ -137,6 +137,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
@@ -144,6 +145,7 @@ DEPENDENCIES
   minitest-rails-capybara
   pg
   rails (= 4.0.3)
+  rake
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3
