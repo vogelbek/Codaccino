@@ -1,0 +1,44 @@
+header
+  @extend .row
+  .logo
+    @extend .small-3, .medium-2, .large-1, .columns
+    a
+      display: block
+      height: 4rem
+      width: 4rem
+      background-color: $primary
+      border-radius: 0 0 100% 0
+      &:hover
+        i
+          color: lighten($tirtary, 65)
+        span
+          color: lighten($tirtary, 65)
+    i
+      color: white
+      position: relative
+      left: 0.25rem
+    span
+      color: white
+      display: block
+      position: relative
+      left: 0.5rem
+
+  .menu
+    @extend .small-3, .medium-2, .large-1, .columns, .right
+    a
+      display: block
+      height: 4rem
+      width: 4rem
+      background-color: $primary
+      border-radius: 0 0 0 100%
+      &:hover
+        i
+          color: lighten($tirtary, 65)
+        span
+          color: lighten($tirtary, 65)
+    i
+      color: white
+      position: relative
+      left: 1.75rem
+      top: 0.75rem
+
