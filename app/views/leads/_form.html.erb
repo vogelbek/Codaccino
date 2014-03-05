@@ -1,14 +1,4 @@
-<%=form_for(@lead) do |l| %>
-<% if @lead.errors.any? %>
-  <div id = "error_explanation">
-    <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this lead from being saved</h2>
-    <ul>
-      <% @lead.errors.full_messages.each do |msg| %>
-      <%= msg %>
-      <% end %>
-    </ul>
-  </div>
-  <% end %>
+<%= form_for @lead do |l| %>
 
 <div class= "field">
   <%= l.label :twitter_handle %>
