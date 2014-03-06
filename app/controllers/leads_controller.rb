@@ -1,14 +1,18 @@
 class LeadsController < ApplicationController
   def landing
-  create
+  end
+
+  def new
+    @lead = Lead.new
   end
 
   def create
-    @lead = Lead.create params[:lead].permit(:twitter)
-    if @lead.save?
+    @lead = Lead.create params[:lead].permit(:twitter_handle)
+    if @lead.save
       flash[:success] = "We will Tweet @ you #{@lead.twitter_handle}"
+      redirect_to root_path
     else
-      flash[:notice] = "Twitter handle has been saved!"
+      redirect_to root_path
     end
   end
 end

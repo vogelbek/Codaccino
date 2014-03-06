@@ -1,21 +1,11 @@
-<%=form_for(@lead) do |l| %>
-<% if @lead.errors.any? %>
-  <div id = "error_explanation">
-    <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this lead from being saved</h2>
-    <ul>
-      <% @lead.errors.full_messages.each do |msg| %>
-      <%= msg %>
-      <% end %>
-    </ul>
-  </div>
-  <% end %>
+<%= form_for @lead do |l| %>
 
-<div class= "field">
+<div class= "small-6 columns">
   <%= l.label :twitter_handle %>
   <%= l.text_field :twitter_handle %>
 </div>
 
-<div class= "actions">
-  <%= l.submit %>
+<div class= "small-6 columns">
+  <%= l.submit  name = "Tweet @ Me!", class: 'button' %>
 </div>
 <% end %>
