@@ -1,0 +1,71 @@
+shop_1:
+  name: "Urban City Drive-Thru and Louge"
+  address: "4313 212th St SW Mountlake Terrace, WA 98043"
+  site: "http://www.urbancitycoffee.com/content/indexretail.html"
+  phone: "(425) 776-1273"
+  wifi_up: 20
+  wifi_down: 11
+  outlet_rating: 2
+  hrs_wkday: "5:00 am - 10:00 pm"
+  hrs_saturday: " 6:00 am - 10:00 pm"
+  hrs_sunday: "6:00 am - 8:00 pm"
+
+shop_2:
+  name: "Pochi Lifestyle Cafe"
+  address: " 1211 164th St SW Lynnwood, WA 98087"
+  site: "http://www.yelp.com/biz/pochi-lifestyle-cafe-lynnwood"
+  phone: "(425) 967-3435"
+  wifi_up: 13
+  wifi_down: 6
+  outlet_rating: 2
+  hrs_wkday: "1:00 pm - 11:00 pm"
+  hrs_saturday: "12:00 pm - 12:00 am"
+  hrs_sunday: "1:00 pm - 12:00 am"
+
+shop_3:
+  name: "Cafe Racer"
+  address: "5828 Roosevelt Way NE Seattle, WA 98105"
+  site: "http://caferacerseattle.com/"
+  phone: "(206) 523-5282"
+  wifi_up: 10
+  wifi_down: 5
+  outlet_rating: 3
+  hrs_wkday: "9:00 am - 2:00 am"
+  hrs_saturday: "9:00 am - 2:00 am"
+  hrs_sunday: "9:00 am - 2:00 am"
+
+shop_4:
+  name: "Jewel Box Cafe"
+  address: "321 NE Thornton Place, Seattle WA 98125"
+  site: "http://www.jewelboxcafe.net/"
+  phone: "(206) 432-9341"
+  wifi_up: 3
+  wifi_down: 2
+  outlet_rating: 4
+  hrs_wkday: "6:00 am - 11:00 pm"
+  hrs_saturday: "8:00 am - 12:00 am"
+  hrs_sunday: "8:00 am - 11:00 am"
+
+shop_5:
+  name: "Richmond Beach Coffee Company"
+  address: "1442 NW Richmond Beach Rd Shoreline, WA 98177"
+  site: "http://www.richmondbeachcoffee.net/"
+  phone: "(206) 542-0511"
+  wifi_up: 80
+  wifi_down: 2
+  outlet_rating: 1
+  hrs_wkday: "6:00 am - 6:00 pm"
+  hrs_saturday: "6:00 am - 6:00 pm"
+  hrs_sunday: "7:00 am - 6:00 pm"
+
+shop_6:
+  name: "Bubble Island"
+  address: "13754 Aurora Ave N Seattle, WA 98138"
+  site: "http://www.yelp.com/biz/bubble-island-seattle#query:coffee%20shop%20open%20late"
+  phone: "(206) 362-3955"
+  wifi_up: 34
+  wifi_down: 9
+  outlet_rating: 2
+  hrs_wkday: "8:00 am - 6:00 pm"
+  hrs_saturday: "8:00 am - 6:00 pm"
+  hrs_sunday: "8:00 am - 6:00 pm"
