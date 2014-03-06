@@ -1,8 +1,5 @@
 class LeadsController < ApplicationController
   def landing
-  end
-
-  def new
     @lead = Lead.new
   end
 
