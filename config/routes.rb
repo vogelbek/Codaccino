@@ -2,8 +2,7 @@ Codaccino::Application.routes.draw do
   root 'leads#landing'
   get "shops/index"
 
-  get 'leads/new' => 'leads#new'
-  post 'leads/:id' => 'leads#create'
+  resources :leads
   devise_for :admins
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
