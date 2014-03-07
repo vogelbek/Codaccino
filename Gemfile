@@ -35,4 +35,5 @@ gem 'rake'
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  ruby '2.1.0'
 end
