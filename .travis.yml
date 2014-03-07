@@ -9,5 +9,4 @@ env:
 script:
   - RAILS_ENV=test bundle exec rake --trace db:migrate test
 before_script:
-  - mysql -e 'create database portfolio_test'
-  - psql -c 'create database portfolio_test' -U postgres
+  - psql -c 'create database codaccino_test' -U postgres
