@@ -8,6 +8,6 @@ require "minitest/pride"
 class ActiveSupport::TestCase
 
   fixtures :all
-  include Devise::TestHelpers
+
 
 end

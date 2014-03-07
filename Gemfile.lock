@@ -162,6 +162,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
   font-awesome-rails
+  i18n (>= 0.6.5)
   jbuilder (~> 1.2)
   jquery-rails
   minitest-rails
