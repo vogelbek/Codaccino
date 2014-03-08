@@ -22,4 +22,12 @@ feature 'ShopCreateReadUpdateDelete' do
     page.must_have_content shops(:shop_1).name
     page.must_have_content shops(:shop_2).name
   end
+  scenario 'Shops index should have key coffeeshop info' do
+    visit shops_path
+    page.must_have_content shops(:shop_1).name
+    page.must_have_content shops(:shop_1).address
+    page.must_have_content shops(:shop_1).wifi_up
+    page.must_have_content shops(:shop_1).wifi_down
+    page.must_have_content shops(:shop_1).outlet_rating
+  end
 end
