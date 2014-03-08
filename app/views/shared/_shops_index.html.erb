@@ -1,0 +1,11 @@
+<% @shops.each do |shop| %>
+  <div class='small-12 columns'>
+    <H1><%= shop.name %></H1>
+    <h2><%= shop.address %></h2>
+    <ul>
+      <li><%= shop.wifi_up %></li>
+      <li><%= shop.wifi_down %></li>
+      <li><%= shop.outlet_rating %></li>
+    </ul>
+  </div>
+<% end %>

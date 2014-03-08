@@ -17,5 +17,9 @@ feature 'ShopCreateReadUpdateDelete' do
     click_on 'Commit the Coffeeshop'
     page.must_have_content 'data saved'
   end
-
+  scenario 'Root path must index coffeeshops' do
+    visit root_path
+    page.must_have_content shops(:shop_1).name
+    page.must_have_content shops(:shop_2).name
+  end
 end
