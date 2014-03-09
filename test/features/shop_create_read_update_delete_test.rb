@@ -30,4 +30,10 @@ feature 'ShopCreateReadUpdateDelete' do
     page.must_have_content shops(:shop_1).wifi_down
     page.must_have_content shops(:shop_1).outlet_rating
   end
+  scenario 'Click shop name to see show page' do
+    visit shops_path
+    click_on shops(:shop_2).name
+    page.must_have_content shops(:shop_2).address
+    assert current_path == shop_path(shops(:shop_2))
+  end
 end
