@@ -29,6 +29,7 @@ feature 'ShopCreateReadUpdateDelete' do
     page.must_have_content "Wifi Up: #{shops(:shop_1).wifi_up}"
     page.must_have_content "Wifi Down: #{shops(:shop_1).wifi_down}"
     page.must_have_content "Power: #{shops(:shop_1).outlet_rating}"
+    page.must_have_content "Noise: #{shops(:shop_1).noise}"
   end
   scenario 'Click shop name to see show page' do
     visit shops_path
@@ -46,6 +47,7 @@ feature 'ShopCreateReadUpdateDelete' do
     page.must_have_content "Wifi Up: #{shops(:shop_3).wifi_up}"
     page.must_have_content "Wifi Down: #{shops(:shop_3).wifi_down}"
     page.must_have_content "Power: #{shops(:shop_3).outlet_rating}"
+    page.must_have_content "Noise: #{shops(:shop_3).noise}"
     page.must_have_content shops(:shop_3).hrs_wkday
     page.must_have_content shops(:shop_3).hrs_saturday
     page.must_have_content shops(:shop_3).hrs_sunday
