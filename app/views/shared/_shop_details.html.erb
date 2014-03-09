@@ -1,0 +1,19 @@
+<%= render 'shared/shops_index', shop: shop %>
+<div class='small-12 columns'>
+  <h2><%= link_to shop.site %></h2>
+  <h2><%= shop.phone %></h2>
+  <table>
+    <tr>
+      <td>Weekday Hours</td>
+      <td><%= shop.hrs_wkday %></td>
+    </tr>
+    <tr>
+      <td>Saturday Hours</td>
+      <td><%= shop.hrs_saturday %></td>
+    </tr>
+    <tr>
+      <td>Sunday Hours</td>
+      <td><%= shop.hrs_sunday %></td>
+    </tr>
+  </table>
+</div>

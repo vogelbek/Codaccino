@@ -36,4 +36,18 @@ feature 'ShopCreateReadUpdateDelete' do
     page.must_have_content shops(:shop_2).address
     assert current_path == shop_path(shops(:shop_2))
   end
+  scenario 'The show for shops should have every field' do
+    visit root_path
+    click_on shops(:shop_3).name
+    page.must_have_content shops(:shop_3).name
+    page.must_have_content shops(:shop_3).address
+    page.must_have_content shops(:shop_3).site
+    page.must_have_content shops(:shop_3).phone
+    page.must_have_content shops(:shop_3).wifi_up
+    page.must_have_content shops(:shop_3).wifi_down
+    page.must_have_content shops(:shop_3).outlet_rating
+    page.must_have_content shops(:shop_3).hrs_wkday
+    page.must_have_content shops(:shop_3).hrs_saturday
+    page.must_have_content shops(:shop_3).hrs_sunday
+  end
 end
