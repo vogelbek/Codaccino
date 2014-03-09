@@ -1,0 +1,56 @@
+<%=form_for(@shop) do |s| %>
+
+<div class= "small-6 columns">
+  <%= s.label :name %>
+  <%= s.text_field :name %>
+</div>
+
+<div class= "small-6 columns">
+  <%= s.label :address %>
+  <%= s.text_field :address %>
+</div>
+
+<div class= "small-6 columns">
+  <%= s.label :site %>
+  <%= s.text_field :site %>
+</div>
+
+<div class= "small-6 columns">
+  <%= s.label :phone %>
+  <%= s.text_field :phone %>
+</div>
+
+<div class= "small-6 columns">
+  <%= s.label :wifi_up %>
+  <%= s.text_field :wifi_up %>
+</div>
+
+<div class= "small-6 columns">
+  <%= s.label :wifi_down %>
+  <%= s.text_field :wifi_down %>
+</div>
+
+<div class= "small-6 columns">
+  <%= s.label :outlet_rating %>
+  <%= s.text_field :outlet_rating %>
+</div>
+
+<div class= "small-6 columns">
+  <%= s.label :hrs_wkday %>
+  <%= s.text_field :hrs_wkday %>
+</div>
+
+<div class= "small-6 columns">
+  <%= s.label :hrs_saturday %>
+  <%= s.text_field :hrs_saturday %>
+</div>
+
+<div class= "small-6 columns">
+  <%= s.label :hrs_sunday %>
+  <%= s.text_field :hrs_sunday %>
+</div>
+
+<div class= "small-6 columns">
+  <%= s.submit  name = "Commit the Coffeeshop", class: 'button' %>
+</div>
+<% end %>

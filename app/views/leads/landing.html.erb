@@ -10,3 +10,8 @@
   </div>
   <%= render 'form' %>
 </div>
+<div class = 'row'>
+  <% @shops.each do |shop|%>
+    <%= render 'shared/shops_index', shop: shop %>
+  <% end %>
+</div>
