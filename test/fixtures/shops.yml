@@ -8,6 +8,7 @@ shop_1:
   wifi_up: 20
   wifi_down: 11
   outlet_rating: 2
+  noise: 2
   hrs_wkday: '5:00 am - 10:00 pm'
   hrs_saturday: '6:00 am - 10:00 pm'
   hrs_sunday: '6:00 am - 8:00 pm'
@@ -20,6 +21,7 @@ shop_2:
   wifi_up: 13
   wifi_down: 6
   outlet_rating: 2
+  noise: 5
   hrs_wkday: '1:00 pm - 11:00 pm'
   hrs_saturday: '12:00 pm - 12:00 am'
   hrs_sunday: '1:00 pm - 12:00 am'
@@ -32,6 +34,7 @@ shop_3:
   wifi_up: 10
   wifi_down: 5
   outlet_rating: 3
+  noise: 2
   hrs_wkday: '9:00 am - 2:00 am'
   hrs_saturday: '9:00 am - 2:00 am'
   hrs_sunday: '9:00 am - 2:00 am'
@@ -44,6 +47,7 @@ shop_4:
   wifi_up: 3
   wifi_down: 2
   outlet_rating: 4
+  noise: 4
   hrs_wkday: '6:00 am - 11:00 pm'
   hrs_saturday: '8:00 am - 12:00 am'
   hrs_sunday: '8:00 am - 11:00 am'
@@ -56,6 +60,7 @@ shop_5:
   wifi_up: 80
   wifi_down: 2
   outlet_rating: 1
+  noise: 1
   hrs_wkday: '6:00 am - 6:00 pm'
   hrs_saturday: '6:00 am - 6:00 pm'
   hrs_sunday: '7:00 am - 6:00 pm'
@@ -68,6 +73,7 @@ shop_6:
   wifi_up: 34
   wifi_down: 9
   outlet_rating: 2
+  noise: 3
   hrs_wkday: '8:00 am - 6:00 pm'
   hrs_saturday: '8:00 am - 6:00 pm'
   hrs_sunday: '8:00 am - 6:00 pm'
@@ -80,6 +86,7 @@ shop_6:
   wifi_up: 34
   wifi_down: 9
   outlet_rating: 2
+  noise: 2
   hrs_wkday: '8:00 am - 6:00 pm'
   hrs_saturday: '8:00 am - 6:00 pm'
   hrs_sunday: '8:00 am - 6:00 pm'
