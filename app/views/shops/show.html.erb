@@ -1,3 +1,8 @@
 <div class = 'row'>
   <%= render 'shared/shop_details', shop: @shop %>
+<% flash.each do |key,value| %>
+      <div class = "alert-box round <%= flash_class(key) %>">
+          <%= value %>
+      </div>
+  <% end %>
 </div>

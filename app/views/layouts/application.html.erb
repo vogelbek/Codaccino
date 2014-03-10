@@ -14,7 +14,7 @@
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+  	<title><%= content_for?(:title) ? yield(:title) : "Codaccino" %></title>
 
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
@@ -23,15 +23,21 @@
 
   <body>
 
+
+
     <%= render 'layouts/chrome' %>
 
     <%= yield %>
 
-<% flash.each do |key,value| %>
-      <div class = "alert-box round <%= flash_class(key) %>">
-          <%= value %>
-      </div>
-  <% end %>
+
+    <% if admin_signed_in? %>
+      <%= link_to "Logout", destroy_admin_session_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% else %>
+      <%= link_to "Log In", new_admin_session_path %>
+    <% end %>
+
+
     <%= javascript_include_tag "application" %>
+
   </body>
 </html>
