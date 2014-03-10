@@ -74,12 +74,10 @@ feature 'ShopCreateReadUpdateDelete' do
     visit  root_path
     click_on 'Log In'
     sign_in
-    save_and_open_page
     click_on shops(:shop_3).name
     first(:link, 'edit').click
     fill_in 'Name', with: shops(:shop_6).name
     fill_in 'Hrs wkday', with: shops(:shop_6).hrs_wkday
-    save_and_open_page
     click_on 'Commit the Coffeeshop'
     page.must_have_content shops(:shop_6).name
     page.must_have_content shops(:shop_6).hrs_wkday
