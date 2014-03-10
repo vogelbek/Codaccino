@@ -20,7 +20,9 @@ class ShopsController < ApplicationController
                                               :outlet_rating,
                                               :hrs_wkday,
                                               :hrs_saturday,
-                                              :hrs_sunday
+                                              :hrs_sunday,
+                                              :shop_image,
+                                              :shop_image_cache
     if @shop.save
       flash[:success] = "data saved in the datebase bro"
       redirect_to root_path
