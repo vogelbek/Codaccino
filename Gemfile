@@ -21,7 +21,8 @@ group :doc do
 end
 gem 'devise'
 gem 'minitest-rails'
- gem 'i18n', '>= 0.6.5'
+gem 'i18n', '>= 0.6.5'
+gem 'launchy'
 
 group :development, :test do
   gem 'minitest-rails-capybara'
