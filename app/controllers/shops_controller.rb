@@ -54,6 +54,7 @@ private
                                   :address,
                                   :site,
                                   :phone,
+                                  :noise,
                                   :wifi_up,
                                   :wifi_down,
                                   :outlet_rating,
