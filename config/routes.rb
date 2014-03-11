@@ -1,6 +1,7 @@
 Codaccino::Application.routes.draw do
   root 'leads#landing'
   get "shops/index"
+  get "shops/wifi_up" => 'shops#sort_wifi_up'
 
   resources :leads
   resources :shops
