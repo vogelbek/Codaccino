@@ -1,4 +1,4 @@
-<%=form_for(@shop) do |s| %>
+<%=form_for @shop, html: {multipart: true} do |s| %>
 
 <div class= "small-6 columns">
   <%= s.label :name %>
@@ -53,6 +53,11 @@
 <div class= "small-6 columns">
   <%= s.label :hrs_sunday %>
   <%= s.text_field :hrs_sunday %>
+</div>
+<div class= "small-6 columns">
+  <%= image_tag(@shop.shop_image) if @shop.shop_image? %>
+  <%= s.file_field :shop_image %>
+  <%= s.hidden_field :shop_image_cache %>
 </div>
 
 <div class= "small-6 columns">

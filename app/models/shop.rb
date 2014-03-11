@@ -1,11 +1,13 @@
 class Shop < ActiveRecord::Base
-
+<<<<<<< HEAD
+  mount_uploader :shop_image, ShopImageUploader
 # presence: true, uniqueness: true, length: { minimum: 2 }, format: /@/
   validates :name, length: { minimum: 4 }, uniqueness: true , presence: true
 
   validates :address, length: { minimum: 8}, uniqueness: true , presence: true
 
   validates :site, exclusion: { in: %w(< > )}
+
 
   # validates :phone
 
@@ -22,4 +24,5 @@ class Shop < ActiveRecord::Base
   # validates :hrs_saturday
 
   # validates :hrs_sunday
+
 end
