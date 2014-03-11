@@ -15,19 +15,7 @@ class ShopsController < ApplicationController
   end
 
   def create
-    @shop = Shop.create params[:shop].permit  :name,
-                                              :address,
-                                              :site,
-                                              :phone,
-                                              :wifi_up,
-                                              :wifi_down,
-                                              :noise,
-                                              :outlet_rating,
-                                              :hrs_wkday,
-                                              :hrs_saturday,
-                                              :hrs_sunday,
-                                              :shop_image,
-                                              :shop_image_cache
+    @shop = Shop.create shop_params
     if @shop.save
       flash[:success] = "data saved in the datebase bro"
       redirect_to root_path
@@ -72,7 +60,9 @@ private
                                   :outlet_rating,
                                   :hrs_wkday,
                                   :hrs_saturday,
-                                  :hrs_sunday
+                                  :hrs_sunday,
+                                  :shop_image,
+                                  :shop_image_cache
   end
 
 end
