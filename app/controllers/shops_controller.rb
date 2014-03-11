@@ -1,9 +1,13 @@
 class ShopsController < ApplicationController
   before_action :set_shop, only: [:edit, :show, :update, :destroy]
-  before_action :authenticate_admin!, except: [:show, :index]
+  before_action :authenticate_admin!, except: [:show, :index, :sort_wifi_up]
 
   def index
     @shops = Shop.all
+  end
+
+  def sort_wifi_up
+    @shops = Shop.all.reorder('wifi_up').reverse_order
   end
 
   def new

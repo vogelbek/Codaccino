@@ -6,10 +6,13 @@
     <% end %>
   </div>
   <div class = 'menu'>
-    <%= link_to shops_index_path, alt: 'Menu' do %>
+    <%= link_to shops_index_path, alt: 'Menu', id: 'menu' do %>
       <i class="fa fa-bars fa-2x"></i>
     <% end %>
   </div>
-
-
+  <div id = 'sort-menu' class = 'off-screen'>
+    <ul>
+      <li><%= link_to 'Sort by Wifi Up', shops_wifi_up_path %></li>
+    </ul>
+  </div>
 </header>
