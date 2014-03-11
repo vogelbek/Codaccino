@@ -10,7 +10,6 @@ feature "ViewLandingPage" do
     visit root_path
     fill_in "Twitter", with: leads(:one).twitter_handle
     click_on "Tweet @ Me!"
-    save_and_open_page
-    page.text.must_contain "We will Tweet @ you #{leads(:one).twitter_handle}"
+    page.must_have_content "We will Tweet @ you #{leads(:one).twitter_handle}"
   end
 end
