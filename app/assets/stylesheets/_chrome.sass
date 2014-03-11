@@ -1,7 +1,7 @@
 header
-  @extend .row
   .logo
-    @extend .small-3, .medium-2, .large-1, .columns
+    position: fixed
+    z-index: 1
     a
       display: block
       height: 4rem
@@ -24,7 +24,9 @@ header
       left: 0.5rem
 
   .menu
-    @extend .small-3, .medium-2, .large-1, .columns, .right
+    position: fixed
+    right: 0
+    z-index: 1
     a
       display: block
       height: 4rem
@@ -33,12 +35,25 @@ header
       border-radius: 0 0 0 100%
       &:hover
         i
-          color: lighten($tirtary, 65)
+          color: lighten($secondary, 50)
         span
-          color: lighten($tirtary, 65)
+          color: lighten($secondary, 50)
     i
       color: white
       position: relative
       left: 1.75rem
       top: 0.75rem
+
+  .on-screen
+    @extend .row
+    background-color: $secondary
+    color: white
+    a
+      color: white
+      &:hover
+        color: lighten($tirtary, 65)
+    li
+      @extend .small-2, .columns
+      &:first-child
+        @extend .small-offset-1
 
