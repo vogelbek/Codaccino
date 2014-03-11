@@ -1,22 +1,26 @@
 <%= render 'shared/shops_index', shop: shop %>
-
-<div class='small-12 columns'>
-  <h2><%= link_to shop.site %></h2>
-  <h2><%= shop.phone %></h2>
-  <table>
-    <tr>
-      <td>Weekday Hours</td>
-      <td><%= shop.hrs_wkday %></td>
-    </tr>
-    <tr>
-      <td>Saturday Hours</td>
-      <td><%= shop.hrs_saturday %></td>
-    </tr>
-    <tr>
-      <td>Sunday Hours</td>
-      <td><%= shop.hrs_sunday %></td>
-    </tr>
-  </table>
+<div class = 'row'>
+  <div class='small-12 large-6 columns'>
+    <h3><%= link_to shop.site %></h3>
+    <h3><%= shop.phone %></h3>
+  </div>
+  <div class='small-12 large-6 columns'>
+    <h3>Hours</h3>
+    <table>
+      <tr>
+        <td>Weekday Hours</td>
+        <td><%= shop.hrs_wkday %></td>
+      </tr>
+      <tr>
+        <td>Saturday Hours</td>
+        <td><%= shop.hrs_saturday %></td>
+      </tr>
+      <tr>
+        <td>Sunday Hours</td>
+        <td><%= shop.hrs_sunday %></td>
+      </tr>
+    </table>
+  </div>
 </div>
 
 <% if admin_signed_in? %>

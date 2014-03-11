@@ -8,12 +8,18 @@
   <div class='shop'>
 
     <h2><%= shop.address %></h2>
-    <ul>
-      <li>Wifi Up: <%= shop.wifi_up %></li>
-      <li>Wifi Down: <%= shop.wifi_down %></li>
-      <li>Power: <%= shop.outlet_rating %></li>
-      <li>Noise: <%= shop.noise %></li>
-    </ul>
-
+    <div class = 'row'>
+      <div class = 'small-6 columns'>
+        <%= image_tag(shop.shop_image) if shop.shop_image? %>
+      </div>
+      <div class = 'small-6 columns'>
+        <ul>
+          <li>Wifi Up: <%= shop.wifi_up %></li>
+          <li>Wifi Down: <%= shop.wifi_down %></li>
+          <li>Power: <%= shop.outlet_rating %></li>
+          <li>Noise: <%= shop.noise %></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
