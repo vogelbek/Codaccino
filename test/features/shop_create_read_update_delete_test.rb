@@ -45,7 +45,7 @@ feature 'ShopCreateReadUpdateDelete' do
         click_on shops(:shop_3).name
         page.must_have_content shops(:shop_3).name
         page.must_have_content shops(:shop_3).address
-        page.must_have_content shops(:shop_3).site
+        page.must_have_content "Website"
         page.must_have_content shops(:shop_3).phone
         page.must_have_content "Wifi Up: #{shops(:shop_3).wifi_up}"
         page.must_have_content "Wifi Down: #{shops(:shop_3).wifi_down}"
@@ -56,21 +56,6 @@ feature 'ShopCreateReadUpdateDelete' do
         page.must_have_content shops(:shop_3).hrs_sunday
     end
 
-    scenario 'The show for shops should have every field' do
-        visit root_path
-        click_on shops(:shop_3).name
-        page.must_have_content shops(:shop_3).name
-        page.must_have_content shops(:shop_3).address
-        page.must_have_content shops(:shop_3).site
-        page.must_have_content shops(:shop_3).phone
-        page.must_have_content "Wifi Up: #{shops(:shop_3).wifi_up}"
-        page.must_have_content "Wifi Down: #{shops(:shop_3).wifi_down}"
-        page.must_have_content "Power: #{shops(:shop_3).outlet_rating}"
-        page.must_have_content "Noise: #{shops(:shop_3).noise}"
-        page.must_have_content shops(:shop_3).hrs_wkday
-        page.must_have_content shops(:shop_3).hrs_saturday
-        page.must_have_content shops(:shop_3).hrs_sunday
-    end
 
     scenario 'After login admin can edit shop information' do
         visit  root_path
@@ -100,7 +85,7 @@ feature 'ShopCreateReadUpdateDelete' do
     scenario 'Sort shops by best wifi_up speed' do
         visit root_path
         click_link 'menu'
-        click_on 'Sort by Wifi Up'
+        click_on 'Wifi Up'
         page.text.must_match(/#{shops(:shop_5).name}.*#{shops(:shop_1).name}/)
       end
 
