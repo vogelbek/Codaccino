@@ -4,8 +4,7 @@
           <%= value %>
       </div>
   <% end %>
-  <% @shops.each do |shop|%>
-    <%= render 'shared/shops_index', shop: shop %>
-  <% end %>
-
 </div>
+<% @shops.each do |shop|%>
+  <%= render 'shared/shops_index', shop: shop %>
+<% end %>

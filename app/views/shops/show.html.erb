@@ -2,10 +2,10 @@
   <div class = 'small-12 columns'>
     <%= image_tag(@shop.shop_image) if @shop.shop_image? %>
   </div>
-  <%= render 'shared/shop_details', shop: @shop %>
-<% flash.each do |key,value| %>
-      <div class = "alert-box round <%= flash_class(key) %>">
-          <%= value %>
-      </div>
+  <% flash.each do |key,value| %>
+    <div class = "alert-box round <%= flash_class(key) %>">
+      <%= value %>
+    </div>
   <% end %>
 </div>
+<%= render 'shared/shop_details', shop: @shop %>
