@@ -1,7 +1,7 @@
 <%= render 'shared/shops_index', shop: shop %>
 <div class = 'row'>
   <div class='small-12 large-6 columns'>
-    <h3><%= link_to shop.name, /^http/.match(shop.site) ? shop.site : "http://#{shop.site}" %></h3>
+    <h3><%= link_to 'Website', /^http/.match(shop.site) ? shop.site : "http://#{shop.site}" %></h3>
     <h3><%= shop.phone %></h3>
   </div>
   <div class='small-12 large-6 columns'>
