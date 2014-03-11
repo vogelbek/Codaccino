@@ -81,8 +81,8 @@ $default-float: left;
 
 $primary-color: $secondary;
 $secondary-color: $tirtary;
-// $alert-color: #c60f13;
-// $success-color: #5da423;
+$alert-color: lighten($primary, 30);
+$success-color: darken($primary, 10);
 
 // Make sure border radius matches unless we want it different.
 

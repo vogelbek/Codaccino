@@ -30,11 +30,15 @@
     <%= yield %>
 
 
-    <% if admin_signed_in? %>
-      <%= link_to "Logout", destroy_admin_session_path, method: :delete, data: { confirm: 'Are you sure?' } %>
-    <% else %>
-      <%= link_to "Log In", new_admin_session_path %>
-    <% end %>
+    <div class = 'row'>
+      <div class = 'small-12 columns'>
+        <% if admin_signed_in? %>
+          <%= link_to "Logout", destroy_admin_session_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% else %>
+          <%= link_to "Log In", new_admin_session_path %>
+        <% end %>
+      </div>
+    </div>
 
 
     <%= javascript_include_tag "application" %>

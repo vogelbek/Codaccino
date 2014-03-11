@@ -24,5 +24,9 @@
 </div>
 
 <% if admin_signed_in? %>
-<%= link_to 'edit', edit_shop_path(shop) %> | <%=link_to 'delete', shop, method: :delete, data: {confirm: "Wow did they try to sue? Blow it away then!"} %>
+<div class = 'row'>
+  <div class = 'small-12 columns'>
+    <%= link_to 'edit', edit_shop_path(shop) %> | <%=link_to 'delete', shop, method: :delete, data: {confirm: "Wow did they try to sue? Blow it away then!"} %>
+  </div>
+</div>
 <% end %>
