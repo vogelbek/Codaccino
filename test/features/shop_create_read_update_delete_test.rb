@@ -12,12 +12,12 @@ feature 'ShopCreateReadUpdateDelete' do
         fill_in 'Wifi up', with: shops(:shop_1).wifi_up
         fill_in 'Wifi down', with: shops(:shop_1).wifi_down
         fill_in 'Outlet rating', with: shops(:shop_1).noise
-        fill_in 'noise', with: shops(:shop_1).noise
+        fill_in 'Noise', with: shops(:shop_1).noise
         fill_in 'Hrs wkday', with: shops(:shop_1).hrs_wkday
         fill_in 'Hrs saturday', with: shops(:shop_1).hrs_saturday
         fill_in 'Hrs sunday', with: shops(:shop_1).hrs_sunday
         click_on 'Commit the Coffeeshop'
-        save_and_open_page
+
         page.must_have_content "data saved in the datebase bro"
     end
     scenario 'Root path must index coffeeshops' do
