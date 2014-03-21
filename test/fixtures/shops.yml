@@ -78,7 +78,7 @@ shop_6:
   hrs_saturday: '8:00 am - 6:00 pm'
   hrs_sunday: '8:00 am - 6:00 pm'
 
-shop_6:
+shop_7:
   name: 'Terabtye'
   address: '13754 Aurora Ave N Seattle, WA 98138'
   site: 'http://www.yelp.com/biz/bubble-island-seattle#query:coffee%20shop%20open%20late'
