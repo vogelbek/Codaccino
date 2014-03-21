@@ -87,15 +87,6 @@ feature 'ShopCreateReadUpdateDelete' do
         click_link 'menu'
         click_on 'Wifi Up'
         page.text.must_match(/#{shops(:shop_5).name}.*#{shops(:shop_1).name}/)
-      end
-
-    scenario 'A user cannot add invalid name data' do
-        visit new_shop_path
-        sign_in
-        page.must_have_content 'Where are you today?'
-        fill_in 'Name', with: "r"
-        click_on 'Commit the Coffeeshop'
-        page.must_have_content "Shop not saved in the database bro... Try again"
     end
 
 end

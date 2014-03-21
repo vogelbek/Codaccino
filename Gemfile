@@ -20,6 +20,7 @@ gem 'simplecov', '~> 0.7.1'
 
 # Upload and manage images
 gem 'carrierwave'
+gem 'fog'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
