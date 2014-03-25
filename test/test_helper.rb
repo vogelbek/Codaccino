@@ -19,5 +19,12 @@ class ActiveSupport::TestCase
       click_on "Sign in"
     end
 
+    def rating_entered
+      click_on shops(:shop_2).name
+      click_link 'noise'
+      click_on button 'Noisy as Hell'
+    end
+
+
 end
 

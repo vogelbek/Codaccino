@@ -1,7 +1,7 @@
 {
   "Unit Tests": {
     "coverage": {
-      "/Users/Adam/learning/Codaccino/app/models/admin.rb": [
+      "/Users/adam/Documents/dev/Codaccino/app/models/admin.rb": [
         1,
         null,
         null,
@@ -9,33 +9,33 @@
         null,
         null
       ],
-      "/Users/Adam/learning/Codaccino/app/helpers/application_helper.rb": [
+      "/Users/adam/Documents/dev/Codaccino/app/helpers/application_helper.rb": [
         1,
         1,
-        9,
-        5,
-        4,
+        2,
+        1,
+        1,
         0,
         0,
         null,
         null,
         null
       ],
-      "/Users/Adam/learning/Codaccino/app/helpers/leads_helper.rb": [
+      "/Users/adam/Documents/dev/Codaccino/app/helpers/leads_helper.rb": [
         1,
         null
       ],
-      "/Users/Adam/learning/Codaccino/app/helpers/shops_helper.rb": [
+      "/Users/adam/Documents/dev/Codaccino/app/helpers/shops_helper.rb": [
         1,
         null
       ],
-      "/Users/Adam/learning/Codaccino/app/models/lead.rb": [
+      "/Users/adam/Documents/dev/Codaccino/app/models/lead.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/Adam/learning/Codaccino/app/models/shop.rb": [
+      "/Users/adam/Documents/dev/Codaccino/app/models/shop.rb": [
         1,
         1,
         null,
@@ -58,7 +58,7 @@
         null,
         null
       ],
-      "/Users/Adam/learning/Codaccino/app/uploaders/shop_image_uploader.rb": [
+      "/Users/adam/Documents/dev/Codaccino/app/uploaders/shop_image_uploader.rb": [
         null,
         null,
         1,
@@ -111,25 +111,18 @@
         null,
         null
       ],
-      "/Users/Adam/learning/Codaccino/app/controllers/application_controller.rb": [
+      "/Users/adam/Documents/dev/Codaccino/app/controllers/leads_controller.rb": [
         1,
+        1,
+        15,
+        15,
         null,
         null,
         1,
-        null
-      ],
-      "/Users/Adam/learning/Codaccino/app/controllers/leads_controller.rb": [
-        1,
-        1,
-        17,
-        17,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
+        0,
         null,
         0,
         0,
@@ -138,60 +131,67 @@
         null,
         null
       ],
-      "/Users/Adam/learning/Codaccino/app/controllers/shops_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        4,
-        null,
-        null,
-        1,
+      "/Users/adam/Documents/dev/Codaccino/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
-        1,
-        null,
-        null,
-        1,
-        1,
+        null
+      ],
+      "/Users/adam/Documents/dev/Codaccino/app/controllers/shops_controller.rb": [
         1,
         1,
         1,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        8,
         null,
         1,
         2,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        1,
+        1,
         null,
         null,
         null,
@@ -210,6 +210,6 @@
         null
       ]
     },
-    "timestamp": 1394582775
+    "timestamp": 1395718576
   }
 }
