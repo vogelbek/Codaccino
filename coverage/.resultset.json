@@ -3,6 +3,7 @@
     "coverage": {
       "/Users/adam/Documents/dev/Codaccino/app/models/admin.rb": [
         1,
+        1,
         null,
         null,
         1,
@@ -54,6 +55,9 @@
         1,
         null,
         1,
+        null,
+        1,
+        null,
         null,
         null,
         null
@@ -114,8 +118,8 @@
       "/Users/adam/Documents/dev/Codaccino/app/controllers/leads_controller.rb": [
         1,
         1,
-        15,
-        15,
+        13,
+        13,
         null,
         null,
         1,
@@ -210,6 +214,6 @@
         null
       ]
     },
-    "timestamp": 1395718576
+    "timestamp": 1395895240
   }
 }
