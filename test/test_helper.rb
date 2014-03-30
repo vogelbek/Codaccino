@@ -21,9 +21,10 @@ class ActiveSupport::TestCase
 
     def rating_entered
       click_on shops(:shop_2).name
-      click_link 'noise'
-      click_on button 'Noisy as Hell'
+      click_link 'Rate this Shop'
+      fill_in "Noise", with: 2
     end
+
 
 
 end

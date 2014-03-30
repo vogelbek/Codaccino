@@ -4,8 +4,10 @@ Codaccino::Application.routes.draw do
   get "shops/wifi_up" => 'shops#sort_wifi_up'
 
   resources :leads
-  resources :shops
-  resources :dynamic_ratings, only: [:new, :create, :show, :destroy]
+  resources :shops do
+    resources :dynamic_ratings, only: [:new, :create, :show, :destroy]
+  end
+
   devise_for :admins
 
 

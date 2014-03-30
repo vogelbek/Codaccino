@@ -1,0 +1,21 @@
+<%=form_for @dynamic_rating, :url => shop_dynamic_ratings_path(@shop) do |s| %>
+
+<div class= "small-6 columns">
+  <%= s.label :wifi_up %>
+  <%= s.text_field :wifi_up %>
+</div>
+
+<div class= "small-6 columns">
+  <%= s.label :wifi_down %>
+  <%= s.text_field :wifi_down %>
+</div>
+
+<div class= "small-6 columns">
+  <%= s.label :noise %>
+  <%= s.text_field :noise %>
+</div>
+
+<div class= "small-12 large-6 columns">
+  <%= s.submit  name = "Enter your rating!", class: 'button expand' %>
+</div>
+<% end %>
