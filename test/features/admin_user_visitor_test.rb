@@ -10,12 +10,13 @@ feature "Admin User Visitor have different modification and access policies" do
   end
 
   scenario 'User attempts to modify store noise rating' do
-    sign_in(:user)
+    sign_in
     rating_entered
     page.must_have_content 'rating saved'
   end
 
   scenario 'Admin attempts to modify store noise rating' do
+    skip "The admin role does not exist"
     sign_in(:admin)
     rating_entered
     page.must_have_content 'rating saved'

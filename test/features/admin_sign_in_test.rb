@@ -3,7 +3,7 @@ require "test_helper"
 feature "AdminSignIn" do
   scenario "Able to sign into application" do
     visit new_admin_session_path
-    fill_in "Email", with: admins(:login_info).email
+    fill_in "Email", with: admins(:abigail).email
     fill_in "Password", with: 'Target1234'
     click_button "Sign in"
     # maybe send in message that says sucessfully logged in

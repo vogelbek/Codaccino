@@ -12,9 +12,9 @@ class DynamicRatingsController < ApplicationController
 
 
   def dynamic_rating_params
-    params.require(:dynamic_rating).permit
+    params.require(:dynamic_rating).permit [
                                   :noise,
                                   :wifi_up,
-                                  :wifi_down
+                                  :wifi_down]
   end
 end
