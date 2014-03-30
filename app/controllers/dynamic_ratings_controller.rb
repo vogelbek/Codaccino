@@ -1,4 +1,4 @@
-class DynamicRatingController < ApplicationController
+class DynamicRatingsController < ApplicationController
   def new
     @dynamic_rating = DynamicRating.new
 

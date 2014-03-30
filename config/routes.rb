@@ -5,6 +5,7 @@ Codaccino::Application.routes.draw do
 
   resources :leads
   resources :shops
+  resources :dynamic_ratings, only: [:new, :create, :show, :destroy]
   devise_for :admins
 
 
